@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topp">
+    <div class="d1">
+      <div class="hding">ROCK</div>
+      <div class="hding">PAPER</div>
+      <div class="hding">SCISSOR</div>
+    </div>
+    <div class="d2">
+      <div class="scrr1">Score</div>
+      <div class="scrr2" id="scorr">00</div>
+      <!-- <div class="scrr2" id="scorr">0</div> -->
+    </div>
+  </div>
+  <div class="maingame" id="mnpage">
+    <div id="round">Round : 0</div>
+    <div id="y1">You Picked</div>
+    <div id="y2">The House is Picking...</div>
+    <button class="btn-paper" id="peprr" aria-label="Paper" onclick="clickedp()"></button>
+      <button class="btn-rock" id="rckk" aria-label="Rock" onclick="clickedr()"></button>
+      <button class="btn-scissors" id="scrss" aria-label="Scissors" onclick="clickeds()"></button>
+      <div id="hidencolor"></div>
+      <button id="pickedup"></button>
+      <button id="pickedup1"></button>
+      <button id="pickedup2"></button>
+      <div id="dabba">
+      <div id="win">You Win</div>
+      <button id="playagn" onclick="letsagain()">Play again</button>
+      </div>
+  </div>
+  <button id="restartt" onclick="letsrefresh()">Restart</button>
+</body>
+<script src="app.js"></script>
+</html>
